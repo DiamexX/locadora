@@ -1,0 +1,20 @@
+
+
+.container{
+    height: 100vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+.numeros{
+    width: 100%;
+}

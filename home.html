@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca de filmes</title>
+    <link rel="stylesheet" href="bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylejs.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="shortcut icon" href="img/Icone do site/faviconlogo.ico" 
+    type="image/x-icon">
+    <script src=""></script>
+
+    
+   
+
+    <script src="javascript.js"></script>
+<style>
+    .movimento{
+        margin-left: -25%;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+
+<body onload="logado();contador()">
+    <div class="container-fluid">
+
+
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">MovieStudio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="fale conosco.html">Fale Conosco</a>
+                        </li>  
+                        <li class="nav-item">
+                            <a class="nav-link" href="Carrinho de compras.html">Carrinho de compras</a>
+                        </li>                 
+                    </ul>
+
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                        <a href="formularioCEP.html">
+                            <button class="btn btn-outline-success" type="button" >BuscarCEP</button>
+                        </a>
+                    </form>
+                    
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Função de login -->
+
+        <div class="row">
+
+            <div class="col-2 mt-4 offset-1">
+                <h4>Seja Bem-vindo:</h4>
+            </div>
+
+            <div class="col-1 mt-4 cor">
+                <h4 id="user"></h4>
+            </div>
+
+            <div class="col-6-sm-1">
+
+                <h3 style="color: white;" id="tempo"></h3>
+                
+                
+        
+              </div>
+
+
+            <!-- Titulo -->
+
+        </div>
+
+        <div class="row text-center mt-4 mb-4">
+            <h1>Top 5 filmes mais assistidos</h1>
+        </div>
+
+
+
+        <!-- card dos filmes -->
+
+        <div class="row">
+
+            <div class="glide">
+                <div class="glide__track" data-glide-el="track">
+                    <ul class="glide__slides">
+                        <li class="glide__slide" style="text-align: center;"><img src="slide1.jpg"
+                                alt="" style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="slide2.jpg"
+                                alt="" style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="slide3.jpg"
+                                alt="" style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="slide4.jpg"
+                                alt="" style="width: 100%; height: 100%;"></li>
+                        <li class="glide__slide" style="text-align: center;"><img src="slide5.jpg"
+                                alt="" style="width: 100%; height: 100%;"></li>
+                    </ul>
+                </div>
+                <div class="glide__arrows" data-glide-el="controls">
+                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+                </div>
+            </div>
+
+
+            <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+            <script>
+                const config = {
+                    type: 'carousel',
+                    perView: 5,
+                    breakpoints: {
+                        800: {
+                            perView: 2
+
+                        }
+                    },
+
+                    autoplay: 2000,
+
+                };
+                new Glide('.glide', config).mount()
+            </script>
+        </div>
+
+
+
+
+
+        <div class="row m-5">
+
+            <div class="col-sm-6 col-md-4 col-lg-2 mb-3">
+                <div class="card">
+                    <a href="1.html">
+                        <img src="img1.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 4.69</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="2.html">
+                        <img src="img2.jpg" class="card-img-top"
+                            alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 3.69</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="3.html"><img src="img3 (2).jpg" class="card-img-top" alt="..."></a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 8.39</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="4.html">
+                        <img src="img4.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 7.24</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="5.html">
+                        <img src="img5.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 4.61</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="6.html">
+                        <img src="img6 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 12.39</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-5">
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="7.html">
+                        <img src="img7 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 4.69</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="8.html">
+                        <img src="img8 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 3.69</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card" >
+                    <a href="9.html">
+                        <img src="img9 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 8.39</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card" >
+                    <a href="10.html">
+                        <img src="img10.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 7.24</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card" >
+                    <a href="11.html">
+                        <img src="img11 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 4.61</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card" >
+                    <a href="12.html">
+                        <img src="img12 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 12.39</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row m-5">
+
+            <div class="col mb-3 ">
+                <div class="card">
+                    <a href="13.html">
+                        <img src="img13 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 4.69</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="14.html">
+                        <img src="img14 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 3.69</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="15.html">
+                        <img src="img15 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 8.39</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="16.html">
+                        <img src="img16.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 7.24</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                    
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="17.html">
+                        <img src="img17 (2).jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 4.61</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                       
+                    </div>
+                </div>
+            </div>
+
+            <div class="col mb-3">
+                <div class="card">
+                    <a href="18.html">
+                        <img src="img18.jpg" class="card-img-top" alt="...">
+                    </a>
+                    <div class="card-body">
+                        <h5 class="card-title">Alugue por R$ 12.39</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+<script src="javascript.js"></script>
+<script src="timeout.js"></script>
+
+</html>

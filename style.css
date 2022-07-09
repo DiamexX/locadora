@@ -1,0 +1,25 @@
+body{
+    
+    background-image: linear-gradient(120deg, #78f8ad, #0c5df3);
+    min-height: 100vh;
+  }
+
+ 
+.img{
+    overflow: hidden;
+}
+
+.numeros{
+    width: 100%;
+}
+
+
+
+.titulo{
+ color: aliceblue;
+}
+
+.cor{
+    color: #fdfdfd;
+}
+
